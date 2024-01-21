@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        style="@style/SpinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/dayNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/purple"
+        android:textSize="30sp"/>
+
+    <!-- Layout para la tabla de horas -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Clases"
+                android:textSize="18sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/infoRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Aquí se agregará dinámicamente la información -->
+        </TableRow>
+
+    </TableLayout>
+
+
+    <!-- Botón "Agregar" para mostrar la ventana emergente -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:text="Agregar"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="PRÓXIMAMENTE :D"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        />
+</LinearLayout>
+

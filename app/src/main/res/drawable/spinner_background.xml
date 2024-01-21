@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Color de fondo (puedes ajustarlo) -->
+    <corners android:radius="8dp" /> <!-- Esquinas redondeadas (ajusta el radio según tus preferencias) -->
+    <stroke android:width="2dp" android:color="@color/purple" /> <!-- Borde de color violeta -->
+</shape>
